@@ -1,5 +1,6 @@
 # Dropbox-CLI
 Dropbox Command Line Interface experiment powered by PHP and MySQL — obsoleted by Dropbox proprietary Python Daemon
+**NOTICE:** at the current moment, it is pretty unstable. Test at own risk.
 
 ---
 
@@ -9,14 +10,10 @@ This arose from my frustrations of trying to pair Drobpox with my Linux VPS with
 For the most part, it tries to be smart about pulling and pushing files that have conflicting revisions, but 
 the system is not quite perfect.
 
----
-
-Pre-requisites
+##Pre-requisites
 
 The application works assuming you have PHP >=5.3.0 with the MySQLi extension loaded, as well as MySQL >=5.3 
 or MariaDB >=10.0, but it probably works just as well on earlier versions. They are simply untested.
-
----
 
 ##Installation
 
@@ -28,10 +25,10 @@ or MariaDB >=10.0, but it probably works just as well on earlier versions. They 
 5. Generate an access token. Place this exact string in `tok.txt`.
 6. Execute setup.sql on your MySQL server. It creates an empty `revs` table to keep track of your revisions.
 
----
-
 ##Usage
 
-Run with:
+Execute with:
 
-  php /path/to/Dropbox/db-cli/main.php
+```
+php /path/to/Dropbox/db-cli/main.php [pull|push|sync] {dir-1} {dir-2} ...
+```
