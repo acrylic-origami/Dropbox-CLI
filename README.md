@@ -1,6 +1,7 @@
 # Dropbox-CLI
 Dropbox Command Line Interface experiment powered by PHP and MySQL — obsoleted by Dropbox proprietary Python Daemon
-**NOTICE:** at the current moment, it is pretty unstable. Test at own risk.
+
+**_NOTICE: at the current moment, it is pretty unstable. Test at own risk._**
 
 ---
 
