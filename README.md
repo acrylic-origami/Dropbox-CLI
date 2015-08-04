@@ -7,14 +7,15 @@ Dropbox Command Line Interface experiment powered by PHP and MySQL — obsoleted
 
 ##What is this madness? Why does/did it exist?
 
-This arose from my frustrations of trying to pair Drobpox with my Linux VPS with the proprietary application. 
+This arose from my frustrations of trying to pair Dropbox with my Linux VPS with the proprietary application. 
 For the most part, it tries to be smart about pulling and pushing files that have conflicting revisions, but 
 the system is not quite perfect.
 
 ##Pre-requisites
 
-The application works assuming you have PHP >=5.3.0 with the MySQLi extension loaded, as well as MySQL >=5.3 
-or MariaDB >=10.0, but it probably works just as well on earlier versions. They are simply untested.
+The application works assuming you have the Git command-line tool, PHP >=5.3.0 with the MySQLi extension 
+loaded, and one of MySQL >=5.3 or MariaDB >=10.0. It probably works just as well on earlier versions. 
+They are simply untested.
 
 ##Installation
 
